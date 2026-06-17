@@ -1,0 +1,230 @@
+06.16 10:35 PM
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhairav Aarogya Jeevan Multi Speciality Hospital | Begusarai</title>
+    <meta name="description" content="Trusted Multi-Speciality Healthcare in Begusarai, Bihar. Advanced medical care, experienced doctors, emergency support, and Ayushman Bharat treatment facilities.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        teal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles & Animations */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(13, 148, 136, 0.9), rgba(17, 94, 89, 0.8)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Floating Action Buttons Animation */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        .fab-pulse {
+            animation: pulse-ring 2s infinite;
+        }
+
+        /* Hide scrollbar for clean horizontal scroll */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .accordion-content {
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Top Bar -->
+    <div class="bg-teal-900 text-white text-xs md:text-sm py-2 px-4 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span class="flex items-center"><i class="fa-solid fa-location-dot mr-2 text-teal-400"></i> Mahammadpur, NH 31, Begusarai, Bihar</span>
+                <span class="flex items-center"><i class="fa-regular fa-clock mr-2 text-teal-400"></i> 24/7 Emergency Services</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="mailto:info@aarogyajeevanbegusaria.com" class="hover:text-teal-300 transition-colors"><i class="fa-solid fa-envelope mr-2"></i> info@aarogyajeevanbegusaria.com</a>
+                <a href="tel:09661122310" class="hover:text-teal-300 transition-colors font-semibold"><i class="fa-solid fa-phone mr-2"></i> 09661122310</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="bg-teal-600 text-white p-2 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-heart-pulse text-2xl"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-xl md:text-2xl text-teal-800 leading-tight">Bhairav Aarogya Jeevan</span>
+                            <span class="text-xs md:text-sm text-slate-500 font-medium">Multi Speciality Hospital</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="#home" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">About Us</a>
+                    <a href="#departments" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Departments</a>
+                    <a href="#doctors" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Doctors</a>
+                    <a href="#ayushman" class="text-teal-600 font-bold hover:text-teal-700 transition-colors flex items-center gap-1"><i class="fa-solid fa-id-card"></i> Ayushman Bharat</a>
+                    <a href="#contact" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Contact</a>
+                    <a href="#appointment" class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Book Appointment</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center lg:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-teal-600 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#home" class="mobile-link block px-3 py-3 text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Home</a>
+                <a href="#about" class="mobile-link block px-3 py-3 text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">About Us</a>
+                <a href="#departments" class="mobile-link block px-3 py-3 text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Departments & Services</a>
+                <a href="#doctors" class="mobile-link block px-3 py-3 text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Doctors</a>
+                <a href="#ayushman" class="mobile-link block px-3 py-3 text-base font-bold text-teal-600 hover:bg-teal-50 rounded-md flex items-center gap-2"><i class="fa-solid fa-id-card"></i> Ayushman Bharat Facility</a>
+                <a href="#contact" class="mobile-link block px-3 py-3 text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-600 rounded-md">Contact Us</a>
+                <a href="#appointment" class="mobile-link mt-4 block w-full text-center bg-teal-600 text-white px-4 py-3 rounded-md font-medium hover:bg-teal-700">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative hero-bg h-[90vh] min-h-[600px] flex items-center pt-10">
+        <div class="absolute inset-0 bg-gradient-to-r from-teal-900/95 to-teal-800/70"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl reveal active">
+                <span class="inline-block py-1 px-3 rounded-full bg-teal-500/20 text-teal-100 border border-teal-400/30 text-sm font-semibold tracking-wider mb-6">
+                    PREMIER HEALTHCARE IN BEGUSARAI
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Trusted Multi-Speciality <span class="text-teal-300">Healthcare</span> in Begusarai
+                </h1>
+                <p class="text-lg md:text-xl text-teal-50 mb-8 max-w-2xl leading-relaxed">
+                    Advanced medical care, experienced doctors, 24/7 emergency support, and Ayushman Bharat treatment facilities under one roof. Your health is our priority.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#appointment" class="bg-white text-teal-700 hover:bg-teal-50 px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg text-center flex items-center justify-center gap-2">
+                        Book Appointment <i class="fa-regular fa-calendar-check"></i>
+                    </a>
+                    <a href="tel:09661122310" class="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center gap-2">
+                        Call Now: 09661122310 <i class="fa-solid fa-phone-volume"></i>
+                    </a>
+                </div>
+                
+                <div class="mt-10 flex items-center gap-4 text-white/90">
+                    <div class="flex -space-x-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-teal-800" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Patient">
+                        <img class="w-10 h-10 rounded-full border-2 border-teal-800" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Patient">
+                        <img class="w-10 h-10 rounded-full border-2 border-teal-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Patient">
+                        <div class="w-10 h-10 rounded-full border-2 border-teal-800 bg-teal-600 flex items-center justify-center text-xs font-bold">+5k</div>
+                    </div>
+                    <p class="text-sm font-medium">Trusted by thousands of happy patients in Bihar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Banner -->
+    <div class="relative -mt-16 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div class="bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden border border-slate-100">
+            <div class="flex-1 p-8 border-b md:border-b-0 md:border-r border-slate-100 hover:bg-teal-50 transition-colors group">
+                <i class="fa-solid fa-truck-medical text-4xl text-teal-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">24/7 Emergency</h3>
+                <p class="text-slate-600 mb-4">Round-the-clock emergency and trauma care with fully equipped ICU.</p>
+                <a href="tel:09661122310" class="text-teal-600 font-semibold hover:text-teal-700 flex items-center gap-1">Call Emergency <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+            <div class="flex-1 p-8 border-b md:border-b-0 md:border-r border-slate-100 bg-teal-600 text-white">
+                <i class="fa-solid fa-id-card text-4xl text-teal-200 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Ayushman Bharat</h3>
+                <p class="text-teal-100 mb-4">Proudly empanelled to provide cashless treatments up to ₹5 Lakhs.</p>
+                <a href="#ayushman" class="text-white font-bold hover:text-teal-200 flex items-center gap-1 underline decoration-2 underline-offset-4">Check Eligibility <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+            <div class="flex-1 p-8 hover:bg-teal-50 transition-colors group">
+                <i class="fa-solid fa-user-doctor text-4xl text-teal-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Expert Doctors</h3>
+                <p class="text-slate-600 mb-4">Highly qualified and experienced super-specialists dedicated to your care.</p>
+                <a href="#doctors" class="text-teal-600 font-semibold hover:text-teal-700 flex items-center gap-1">Meet Our Team <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image side -->
+                <div class="w-full lg:w-1/2 relative reveal">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2x
